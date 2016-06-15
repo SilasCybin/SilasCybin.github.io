@@ -1,0 +1,469 @@
+/*limited reset*/
+html, div, section, article, aside, header, hgroup, footer, nav, h1, h2, h3, h4, h5, h6, p, blockquote, address, time, span, em, strong, img, ol, ul, li, figure, canvas, video, th, td, tr {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    vertical-align:baseline;
+    font: inherit;
+}
+
+/*html5 display rule*/
+address, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, nav, menu, nav, section, summary {
+    display: block;
+}
+
+/*micro-clearfix by Nicolas Gallagher http://nicolasgallagher.com/micro-clearfix-hack/*/
+/* For modern browsers */
+.cf:before, .cf:after {   content:"";
+    display:table;
+}
+
+.cf:after {
+    clear:both;
+}
+
+/* For IE 6/7 (trigger hasLayout) */
+
+.cf {
+    zoom:1;
+}
+a {
+    text-decoration: none;
+}
+
+nav ul {
+    list-style: none;    
+}
+
+nav h2 { display: none; 
+}
+
+/*header styles*/
+
+
+
+/*nav styles*/
+
+#mainNav {
+    margin-bottom: .5em;
+    width: 100%;
+}
+
+#mainNav li {
+    text-align: center;
+}
+
+#mainNav a, #mainNav h3 {
+    display: block;
+    color: rgb(76, 67, 65);
+    border: none;
+    border-radius: .8em;
+}
+
+#mainNav a.current {
+    cursor: default;
+}
+
+
+/*gallery styles*/
+
+
+
+#gallery ul, #gallery li {
+    list-style: none;
+}
+
+
+.yellowtab a { 
+    background-color:rgba(236, 219, 59, 0.4);
+    text-shadow: 2px 2px 8px black
+}
+
+.yellowtab a:link { 
+    background-color:rgba(236, 219, 59, 0.5);
+}
+
+.yellowtab a:hover{ 
+    background-color:rgba(236, 219, 59, 0.8);
+    text-shadow: 2px 2px 8px rgba(245, 114, 91, 1)
+}
+
+.yellowtab a:focus { 
+    background-color:rgba(236, 219, 59, 0.65);
+    text-shadow: 2px 2px 8px rgba(245, 114, 91, 1)
+}
+                    
+.yellowtab a:active { 
+    background-color:rgba(236, 219, 59, 1)
+        
+}
+
+
+
+.redtab a { 
+    background-color:rgba(245, 114, 91, 0.5);
+    text-shadow: 2px 2px 8px black
+}
+
+.redtab a:link { 
+    background-color:rgba(245, 114, 91, 0.5);
+}
+
+.redtab a:hover { 
+    background:rgba(245, 114, 91, 0.9);
+    text-shadow: 2px 2px 8px rgba(236, 219, 59, 1)
+}
+
+.redtab a:focus {   
+    background:rgba(245, 114, 91, 0.83);
+    text-shadow: 2px 2px 8px rgba(236, 219, 59, 1)     
+}
+
+.redtab a:active{   
+    background-color:rgba(245, 114, 91, 1.2)
+}
+
+
+
+.greentab a { 
+    background-color:rgba(80, 247, 68, 0.4);
+    text-shadow: 2px 2px 8px black
+}
+
+.greentab a:link { 
+    background-color:rgba(80, 247, 68, 0.4);
+}
+
+.greentab a:hover { 
+    background:rgba(80, 247, 68, 0.8);
+    text-shadow: 2px 2px 8px rgba(80, 247, 68, 0.8)
+}
+
+.greentab a:focus  { 
+    background-color:rgba(80, 247, 68, 0.65);
+    text-shadow: 2px 2px 8px rgba(80, 247, 68, 0.8)
+}
+
+.greentab a:active  { 
+    background-color:rgba(80, 247, 68, 1)
+}
+
+
+/*footer styles*/
+
+
+/* ------------mobile styles----------------- */
+
+@media only screen and (max-width:480px) {
+
+/*disable text sizing on orientation change*/
+html, body, div, section, article, aside, header, hgroup, footer, nav, h1, h2, h3, h4, h5, h6, p, blockquote, address, time, span, em, strong, img, ol, ul, li, figure, canvas, video, th, td, tr {
+    -webkit-text-size-adjust:none;
+}
+
+body {
+    background-image :url(../images/Logo.png), url(../images/Footer.png);
+    background-position: top, bottom;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+/*header styles*/
+    
+
+/*nav styles*/
+    
+        
+#mainNav {
+    width: auto;
+    margin: 0 auto;
+    background: transparent; 
+    padding-top: 40%;
+}
+
+    
+.topMenu {
+    max-height: 0;
+    visibility: hidden;
+}
+    
+.topMenu.expand {
+    max-height: 900em;
+    visibility: visible;
+    background: transparent;
+}
+
+#mainNav a, #mainNav h3 {
+    font-size: 1.2em;
+    text-align: center;
+    color: beige;
+    display: block;
+    margin-bottom: 1px;
+    line-height: 2em;
+    cursor: pointer;
+}
+
+/*  menu toggle  */    
+    
+    
+#mainNav span.indicator {
+    position: absolute;
+    padding-left: .5em;
+    
+}
+/*dropdown menu styles*/
+
+#mainNav .menuToggle {
+    display: block;
+    background: transparent;
+    width: 8em;
+    margin: 0 auto;
+    
+}
+    
+.menuToggle a {
+    text-align: center;
+    padding: 0;
+    background-color:rgba(68,173,226, 0.8);
+    text-transform: uppercase;
+}
+    
+    
+/*gallery styles*/
+
+.photos {
+    margin-top: .75em;
+}
+    
+    
+.photos img {
+    max-width: 300px;
+    margin: 0 auto;
+    display: block;
+    margin-bottom:.8em;
+    border-radius: .8em .8em 0 0;
+}
+    
+.photos li {
+    position: relative;
+    max-width: 300px;
+    margin: 0 auto;
+    border-radius: .8em .8em 0 0;
+}
+
+#gallery .photos a:after {
+    content: attr(title);
+    display: block;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    line-height: 2em;
+    color: white;
+    text-align: center;
+    background: rgba( 25, 25, 25, .8);
+    z-index: 500;
+    border-radius: .8em .8em 0 0;
+}
+
+
+}
+
+/* ------------tablet styles----------------- */
+@media only screen and (min-width:481px) and (max-width:768px) {
+    
+body {
+    background-image :url(../images/Logo.png), url(../images/footer.png);
+    background-position: top, bottom;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+
+/*header styles*/
+
+
+/*nav styles*/
+        
+#mainNav {
+
+    font-size: 90%;
+    padding-top:40%;
+    
+}
+
+#mainNav ul li {
+
+    float: left;
+    width: 33.3%;
+    text-align: center;
+}
+    
+#mainNav a, #mainNav h3 {
+    font-size: 1.5em;
+    text-align: center;
+    cursor: pointer;
+    color:beige;
+
+}
+ 
+    
+/*gallery styles*/
+    
+
+.photos {
+    -moz-column-count: 2;
+    -moz-column-gap: 0;
+    -webkit-column-count: 2;
+    -webkit-column-gap: 0;
+    column-count: 2;
+    column-gap: 1em;
+    width: 100%;
+    margin-top: .75em;
+}
+
+.photos img {
+    max-width: 100%;
+    border-radius: .8em .8em 0 0;
+}
+    
+.photos li {
+    position: relative;
+    max-width: 300px;
+    margin: 0 auto;
+    border-radius: .8em .8em 0 0;
+}
+
+#gallery .photos a:after {
+    content: attr(title);
+    display: block;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    line-height: 2em;
+    color: white;
+    text-align: center;
+    background: rgba( 25, 25, 25, .8);
+    border-radius: .8em .8em 0 0;
+    z-index: 500;
+}
+
+    
+/*Twitter style*/
+
+    
+#twitterFeed div { 
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 5em;
+} 
+
+    
+/*footer styles*/
+
+    
+}
+    
+
+/* ------------desktop styles----------------- */
+
+
+@media only screen and (min-width:769px) {
+
+body {
+        background-image :url(../images/Logo.png), url(../images/footer.png);
+        background-position: top, bottom;
+        background-repeat: no-repeat;
+        background-size: 100%;
+    
+}
+
+
+/*nav styles*/
+
+    
+#mainNav {
+    padding-top: 38%
+}
+    
+#mainNav li {
+    position: relative;
+}
+    
+#mainNav ul li {
+
+    float: left;
+    margin: 19px 0 12px;
+    width: 33.3%;
+    text-align: center;
+}
+    
+    
+#mainNav a, #mainNav h3 {
+    font-size: 1.5em;
+    text-align: center;
+    color: beige;
+}
+
+    
+/*gallery styles*/
+
+.photos {
+    -moz-column-count: 3;
+    -moz-column-gap: 1em;
+    -webkit-column-count: 3;
+    -webkit-column-gap: 1em;
+    column-count: 3;
+    column-gap: 1em;
+    
+}
+
+.photos img {
+    max-width: 100%;
+    border-radius: .8em .8em 0 0;
+
+    }
+
+.photos li {
+    position: relative;
+    max-width: 300px;
+    margin: 0 auto;
+    border-radius: .8em .8em 0 0;
+}
+
+    
+#gallery .photos a:hover:after {
+    content: attr(title);
+    display: block;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    line-height: 3em;
+    color: white;
+    text-align: center;
+    background: rgba( 25, 25, 25, .8);
+    border-radius: .8em .8em 0 0;
+    z-index: 500;
+}
+
+    
+/*twitter feed style*/
+
+    
+ #twitterFeed div { 
+  display: block;
+  width: 100%;
+  text-align: center;
+  margin: 0 auto;
+     padding-top: 5em;
+} 
+
+    
+/*footer styles*/
+}
+
+
