@@ -1,0 +1,134 @@
+<!DOCTYPE HTML>
+
+<html lang="en">
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>NaSa Farms</title>
+        <link rel="shortcut icon" href="">
+        <link href="css/styles.css" rel="stylesheet" media="screen, projection">
+        <link  href="css/lightbox.css" rel="stylesheet" >
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js" type="text/javascript" ></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js" type="text/javascript" ></script>
+        <script src="js/NaSaFarms.js" type="text/javascript" ></script>
+        <script src="js/modernizr.custom.js" type="text/javascript" ></script>
+        <script>
+        //use the modernizr load to load up external scripts. This will load the scripts asynchronously, but the order listed matters. Although it will load all scripts in parallel, it will execute them in the order listed
+            
+        Modernizr.load([
+        {
+                load: [
+                        'https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js',
+                'js/NaSFarms.js'
+                ]
+        },
+        {
+            // test for media query support, if not load respond.js
+                test : Modernizr.mq('only all'),
+                // If not, load the respond.js file
+                nope : 'js/respond.js'
+        }
+        ]);    
+
+        </script>
+           
+</head>
+    
+<body>
+    
+    
+<div id="tabsCtrl">    
+    
+    <nav id="mainNav" role="navigation" class="cf">
+        <h2>Site navigation</h2>
+        
+            <ul class="topMenu expand">
+
+                    <li class="yellowtab"><a href="#peppers" title="Pepper Gallery">Peppers</a></li>
+                    <li class="redtab"><a href="tabs/tomatoes.htm" title="Tomato Gallery" >Tomatoes</a></li>
+                    <li class="greentab"><a href="tabs/kale.htm" title="Kale Gallery" >Kale</a></li>
+            </ul>
+    </nav>    
+
+    <article id="gallery">
+        
+            <div class="photos" id="peppers">
+
+                <ul id="photoGallery">
+                    
+                    <li><a href="images/BananaPeppers.jpg" data-title="" data-lightbox="peppers"  title="Banana Peppers"><img src="images/BananaPeppers_tn.jpg" alt="Banana Peppers"></a></li>
+            
+                    <li><a href="images/CajunBellPepper.jpg" data-lightbox="peppers" title="Cajun Bell Peppers" ><img src="images/CajunBellPepper_tn.jpg" alt="Cajun Bell Peppers"></a></li>
+                    
+                    <li><a href="images/FiliusBlue.jpg" data-lightbox="peppers" title="Filius Blue Peppers" ><img src="images/FiliusBlue_tn.jpg" alt="Filius Blue Peppers"></a></li>
+                    
+                    <li><a href="images/Tobasco.jpg" data-lightbox="peppers" title="Tobasco" ><img src="images/Tobasco_tn.jpg" alt="Tobasco"></a></li>
+                    
+                    <li><a href="images/HotPeppers.jpg" data-lightbox="peppers" title="Hot Peppers"><img src="images/HotPeppers_tn.jpg" alt="Hot Peppers"></a></li>
+                    
+                    <li><a href="images/Peppers.jpg" data-lightbox="peppers" title="Peppers"><img src="images/Peppers_tn.jpg" alt="Peppers"></a></li>
+                    
+                    <li><a href="images/StuffedPepper.jpg" data-lightbox="peppers" title="Stuffed Pepper"><img src="images/StuffedPepper_tn.jpg" alt="Stuffed Pepper"></a></li>
+                
+                </ul>
+
+            </div>
+
+    </article>
+    
+    </div>
+
+            
+        <article id="twitterFeed">
+
+            <div id="twt_wrap">
+
+                <a class="twitter-timeline"
+                    data-dnt="true" 
+                    data-theme="light"   
+                    data-link-color="#000"
+                    data-chrome="noheader nofooter noscrollbars noborders transparent"   
+                    href="https://twitter.com/SilasCybin" 
+                    data-widget-id="720006142047293441">
+                    Tweets by @SilasCybin</a>
+
+                <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script> 
+
+            </div>
+            
+            
+        </article>
+    
+    
+    
+    <footer id="pageFooter" role="contentinfo">
+
+        
+        
+
+        
+
+
+
+
+        <p class="notice">&copy; funny FN designs 2016</p>
+
+    </footer>    
+    
+    <script src="js/lightbox.min.js" type="text/javascript" ></script>  
+    
+    <script>    
+            $("document").ready(function() {
+            
+            $("#tabsCtrl").tabs({
+              collapsible: true
+            });
+
+        });
+    </script>
+    
+</body>
+    
+</html>
